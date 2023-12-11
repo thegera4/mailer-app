@@ -4,6 +4,10 @@
     <h1>{% block title %}Sent emails{% endblock %}</h1>
 {% endblock %}
 
+{% block action %}
+    <a class="button" href="{{ url_for('mail.create') }}">New email</a>
+{% endblock %}
+
 {% block content %}
     <ul>
         {% for mail in mails %}

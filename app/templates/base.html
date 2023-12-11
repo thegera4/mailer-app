@@ -16,8 +16,8 @@
         <div class="top-bar">
             <form method="get">
                 <input type="text" name="search" placeholder="Search something">
-                <button type="submit" class="search-btn">Search</button>
             </form>
+            {% block action %}{% endblock %}
         </div>
         <header>
             {% block header %}{% endblock %}
